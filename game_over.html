@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="game_over.css">
+</head>
+<body >
+    
+    <div class="mega-wrap">
+        <div class="pics-wrap-l">
+            <img class="sad um" src="images/sad-davi.png" alt="">
+            <img class="sad " src="images/sad-ney.png" alt="">
+            <img class="sad tres" src="images/sad-thiago.png" alt="">
+        </div>
+    <div class="wrap">
+        <img class="trofeu" src="images/perdemo.jpg" alt="">
+
+        <div class="inblock">
+            <div class="inline">
+                <h2>Perdemo</h2>
+
+            </div>
+            <button onclick="reiniciar()">Jogar Denovo</button>
+        </div>
+    </div>
+
+        <div class="pics-wrap-r">
+            <img class="happy um" src="images/dimaria-r.png" alt="">
+            <img class="happy" src="images/messi-r.png" alt="">
+            <img class="happy tres" src="images/tevez-r.png" alt="">
+        </div>
+    </div>
+
+
+    <div id="cronometro"></div>
+    <script src="script.js"></script>
+    <script src="second.js"></script>
+    <script src="audio.js"></script>
+    <script>
+        function reiniciar(){
+            window.location.href='index.html'
+        }
+        
+    </script>
+</body>
+</html>

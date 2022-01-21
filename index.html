@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="inicio.css">
+</head>
+<body>
+    <div class="bg">
+    <img class="logo" src="images/img.png" alt="">
+    <div class="mw">
+    <select id="nivel" class="select">
+        <option value="">-- Selecione o nivel</option>
+        <option value="facil">Facil</option>
+        <option value="medio">Medio</option>
+        <option value="dificil">Dificil</option>
+        <option value="ne">Termina Nunca?</option>
+    </select>
+    <div class="buttons-wrapper">
+        <button onclick="iniciar()">Iniciar Jogo</button>
+    <a target="blank" href="https://thiago-moura.netlify.app/">Créditos</a>
+    </div>
+    </div>
+</div>
+<script>
+    function iniciar(){
+            var nivel = document.getElementById('nivel').value
+
+            if(nivel === ''){
+                return;
+            }
+
+            window.location.href='game.html?'+nivel
+    }
+</script>
+<script src="audio.js"></script>
+</body>
+</html>
